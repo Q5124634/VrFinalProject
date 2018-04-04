@@ -105,6 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4694061186205546}
   - component: {fileID: 95023736260067718}
+  - component: {fileID: 114378429192207494}
+  - component: {fileID: 135994842847038932}
   m_Layer: 0
   m_Name: PA_Drone 1
   m_TagString: Untagged
@@ -158,14 +160,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983571401324780}
-  m_LocalRotation: {x: 0.1275327, y: -0.8086576, z: 0.19046669, w: 0.54178494}
-  m_LocalPosition: {x: -13.277, y: 1.91, z: -13.147}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2493658, y: -0.2, z: -0.5638447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4852684798473306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 26.502, y: -112.355, z: 0.008}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4852684798473306
 Transform:
   m_ObjectHideFlags: 1
@@ -418,3 +420,33 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114378429192207494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983571401324780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8824e6d82258e93499837bbaac6c9004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rail: {fileID: 0}
+  mode: 1
+  speed: 2
+  isReversed: 0
+  isLooping: 1
+  pingPong: 0
+  countDelay: 0
+--- !u!135 &135994842847038932
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983571401324780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3907796
+  m_Center: {x: 0, y: -0.009759307, z: -0.01026106}
