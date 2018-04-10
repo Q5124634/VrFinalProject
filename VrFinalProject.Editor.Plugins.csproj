@@ -291,6 +291,7 @@
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Other\3D Models\Props\Weapons\Ammunition\ReadMe.txt" />
     <None Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Readme.txt" />
     <None Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.cginc" />
     <None Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.shader" />

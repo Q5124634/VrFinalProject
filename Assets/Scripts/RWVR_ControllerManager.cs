@@ -6,6 +6,12 @@ public class RWVR_ControllerManager : MonoBehaviour {
 
     public static RWVR_ControllerManager Instance; // 1
     public GameObject Gun1;
+    public GameObject Gun2;
+    public GameObject Gun3;
+    public GameObject Gun4;
+    public GameObject Gun5;
+    public GameObject Gun6;
+    public GameObject Gun7;
     public RWVR_InteractionController leftController; // 2
     public RWVR_InteractionController rightController; // 3
 
