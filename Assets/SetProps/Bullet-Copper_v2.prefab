@@ -26,8 +26,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 492848}
-  - component: {fileID: 65412400108597924}
   - component: {fileID: 54632426635135642}
+  - component: {fileID: 136228381356490244}
   m_Layer: 0
   m_Name: Bullet-Copper_v2
   m_TagString: Bullet
@@ -85,15 +85,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.876117, y: 2.288, z: -9.602327}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 5.4419184, y: 0.7668, z: 1.5839283}
+  m_LocalScale: {x: 1.9000001, y: 1.9, z: 1.9}
   m_Children:
   - {fileID: 417924}
   - {fileID: 407184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &2342972
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -235,9 +235,9 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65412400108597924
-BoxCollider:
+  m_CollisionDetection: 1
+--- !u!136 &136228381356490244
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -245,6 +245,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.007164955, y: 0.025719404, z: 0.006252289}
-  m_Center: {x: -0.0004143715, y: 0.000101447105, z: 0.000056266785}
+  m_Radius: 0.0052779317
+  m_Height: 0.03085351
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

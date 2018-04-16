@@ -280,6 +280,9 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Q5124634/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="JMOAssets">
+      <HintPath>Assets/Other/JMO Assets/Editor/JMOAssets.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VrFinalProject.Plugins.csproj">
@@ -295,6 +298,20 @@
     <Compile Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\DepthOfField.cs" />
     <Compile Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\ScreenSpaceReflection.cs" />
     <Compile Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\TonemappingColorGrading.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\Other\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Other\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Other\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Other\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -386,11 +403,15 @@
     <Compile Include="Assets\ParticleSystems\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Scripts\Bullets.cs" />
     <Compile Include="Assets\Scripts\ControllerGrabObject.cs" />
+    <Compile Include="Assets\Scripts\DeathSounds.cs" />
     <Compile Include="Assets\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\EndScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies.cs" />
+    <Compile Include="Assets\Scripts\GunScript.cs" />
     <Compile Include="Assets\Scripts\LazerPointer.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\Rail.cs" />
+    <Compile Include="Assets\Scripts\Recoil.cs" />
     <Compile Include="Assets\Scripts\RWVR_ControllerManager.cs" />
     <Compile Include="Assets\Scripts\RWVR_InteractionController.cs" />
     <Compile Include="Assets\Scripts\RWVR_InteractionObject.cs" />
@@ -513,6 +534,22 @@
     <None Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\Histogram.compute" />
     <None Include="Assets\Other\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGrading.shader" />
+    <None Include="Assets\Other\JMO Assets\!JMO Assets Readme.txt" />
+    <None Include="Assets\Other\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\Other\JMO Assets\WarFX\!WarFX Readme.txt" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\Other\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\Other\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\Other\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\Other\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\Other\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
@@ -637,6 +674,11 @@
     <None Include="Assets\ParticleSystems\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
