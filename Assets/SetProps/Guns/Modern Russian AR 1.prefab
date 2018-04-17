@@ -590,6 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e11819c2339484db9ecd49e3ad9187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gun: {fileID: 0}
   myAudioSource: {fileID: 82303139658086894}
   Shoot1: {fileID: 8300000, guid: 2203773368e4340d98c114f55c2dd7fd, type: 3}
   Shoot2: {fileID: 8300000, guid: 4d6281aa604094f04839cffa502096c0, type: 3}
@@ -598,7 +599,11 @@ MonoBehaviour:
   damage: 100
   Bullet_Emitter: {fileID: 1255943964995366}
   Bullet: {fileID: 173556, guid: c8fd62ec06a546646878a10bd648ad01, type: 2}
+  shootAngleRandomAim: 5
+  shootAngleRandomNotAim: 15
   Bullet_Forward_Force: 1000
+  PreviousLocation: {x: 0, y: 0, z: 0}
+  Target: {fileID: 0}
 --- !u!137 &137640218899523180
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
