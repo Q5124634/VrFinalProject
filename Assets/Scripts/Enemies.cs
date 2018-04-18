@@ -28,6 +28,8 @@ public class Enemies : MonoBehaviour
     void Die()
     {
         Instantiate(DeadVersion, transform.position, transform.rotation);
+        GetComponent<ScoreSystem>().TotalScore += 10;
         Destroy(gameObject);
+
     }
 }

@@ -20,7 +20,6 @@ public class Bullets : MonoBehaviour
 
     public void Start()
     {
-        PreviousLocation = Gun.transform.position;
 
     }
     public void PlayShot1()
@@ -47,9 +46,6 @@ public class Bullets : MonoBehaviour
 
 
         }
-
-        WaitOneSecond();
-        Gun.transform.position = PreviousLocation;
 
     }
     void GunShoot()
@@ -78,14 +74,7 @@ public class Bullets : MonoBehaviour
         Rigidbody Temporary_RigidBody;
         Temporary_RigidBody = Temporary_Bullet_Handler.GetComponent<Rigidbody>();
         Temporary_RigidBody.AddForce(transform.forward * Bullet_Forward_Force);
-        Gun.transform.position = Vector3.Lerp(Gun.transform.position, Target.position, 0.1f);
 
         Destroy(Temporary_Bullet_Handler, 10.0f);
     }
-
-    IEnumerator WaitOneSecond()
-    {
-        yield return new WaitForSeconds(1);
-    }
-
 }

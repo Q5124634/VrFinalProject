@@ -34,7 +34,12 @@ public class DoorController : MonoBehaviour {
 
 
 
-    void Update () {
+    void Update ()
+    {
+
+
+
+
         if(DoorIsOpen)
         {
             //TimerStart = Time.time;
@@ -72,7 +77,7 @@ public class DoorController : MonoBehaviour {
     void EndTiming()
     {
         SavedTime = TimerText.text;
-        TimerText.color = Color.cyan;
+        //TimerText.color = Color.cyan;
     }
 
     void StartTiming()
@@ -94,9 +99,14 @@ public class DoorController : MonoBehaviour {
         
     }
 
-    void OnMouseDown()
+    void OnTriggerEnter(Collider Col)
     {
-        DoorIsOpen = true;
+        if (Col.gameObject.transform.CompareTag("Controller"))
+        {
+            DoorIsOpen = true;
+            //Debug.Log("HIT");
+        }
+
     }
 
     IEnumerator WaitOneSecond()

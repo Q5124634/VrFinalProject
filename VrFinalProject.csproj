@@ -259,6 +259,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="JMOAssets">
+      <HintPath>Assets/Other/JMO Assets/Editor/JMOAssets.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/Q5124634/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -279,9 +282,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Q5124634/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="JMOAssets">
-      <HintPath>Assets/Other/JMO Assets/Editor/JMOAssets.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -404,13 +404,16 @@
     <Compile Include="Assets\Scripts\Bullets.cs" />
     <Compile Include="Assets\Scripts\ControllerGrabObject.cs" />
     <Compile Include="Assets\Scripts\DeathSounds.cs" />
+    <Compile Include="Assets\Scripts\DestroyLightAndSiren.cs" />
     <Compile Include="Assets\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\EndScript.cs" />
     <Compile Include="Assets\Scripts\Enemies.cs" />
+    <Compile Include="Assets\Scripts\FlickeringLight.cs" />
     <Compile Include="Assets\Scripts\GunScript.cs" />
     <Compile Include="Assets\Scripts\LazerPointer.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\Rail.cs" />
+    <Compile Include="Assets\Scripts\RandLightFlickering.cs" />
     <Compile Include="Assets\Scripts\Recoil.cs" />
     <Compile Include="Assets\Scripts\RWVR_ControllerManager.cs" />
     <Compile Include="Assets\Scripts\RWVR_InteractionController.cs" />
@@ -418,6 +421,7 @@
     <Compile Include="Assets\Scripts\RWVR_SimpleGrab.cs" />
     <Compile Include="Assets\Scripts\RWVR_SnapToController.cs" />
     <Compile Include="Assets\Scripts\RWVR_SpecialObjectSpawner.cs" />
+    <Compile Include="Assets\Scripts\ScoreSystem.cs" />
     <Compile Include="Assets\Scripts\ViveControlerInputTest.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
