@@ -16,6 +16,8 @@ TagManager:
   - Bullet
   - Door
   - Box
+  - CanClose
+  - Clone
   layers:
   - Default
   - TransparentFX

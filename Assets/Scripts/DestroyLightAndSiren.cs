@@ -9,12 +9,6 @@ public class DestroyLightAndSiren : MonoBehaviour
     public AudioSource myAudioSource;
     bool EnemiesAlive = true;
 
-    private void Start()
-    {
-
-
-    }
-
     void FixedUpdate()
     {
         EnemiesAlive = false;
@@ -31,8 +25,8 @@ public class DestroyLightAndSiren : MonoBehaviour
         if (EnemiesAlive == false)
         {
             myAudioSource.PlayOneShot(WindDown);
-            GetComponent<ScoreSystem>().TotalScore += 100;
             Destroy(gameObject);
+            ScoreSystem.AddScore(100);
         }
     }
 }

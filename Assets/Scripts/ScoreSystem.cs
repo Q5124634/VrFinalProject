@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class ScoreSystem : MonoBehaviour {
 
-    public int TotalScore = 0;  // Use this for initialization
+    public static int TotalScore = 0;  // Use this for initialization
     public Text TotalScoreText;
     // Update is called once per frame
     void Update ()
     {
-        TotalScoreText.text = TotalScoreText.ToString();
+        TotalScoreText.text = TotalScore.ToString();
+    }
+
+    public static void AddScore(int Score)
+    {
+        TotalScore += Score;
     }
 }

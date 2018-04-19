@@ -4,60 +4,54 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class DoorController : MonoBehaviour {
+public class DoorController : MonoBehaviour
+{
     public float speed = 0.005F;
     public GameObject Door;
     public GameObject DoorEnd;
     public GameObject DoorStart;
+    public GameObject[] Known_Prefabs;
+    public GameObject[] Known_Prefabs_Target;
     private float startTime;
     private float journeyLength;
     public bool DoorIsOpen;
     public bool StartTimer = false;
     public Text TimerText;
-    private float TimerStart;
     public float StartedTimer = 0;
     private float NewTime;
     public string SavedTime;
     public GameObject EndButton;
+    public bool firstinitialise = false;
+    public GameObject[] EnemiesSpawned;
 
 
     void Start()
     {
-     float XValue = Door.transform.position.x;
-     float YValue = Door.transform.position.y;
-     float ZValue = Door.transform.position.z;
-
-        
         startTime = Time.time;
         journeyLength = Vector3.Distance(Door.transform.position, DoorEnd.transform.position);
+
     }
 
-
-
-    void Update ()
+    void Update()
     {
 
-
-
-
-        if(DoorIsOpen)
+        if (DoorIsOpen)
         {
-            //TimerStart = Time.time;
             float distCovered = (Time.deltaTime) * speed;
             float fracJourney = distCovered / journeyLength;
             Door.transform.position = Vector3.Lerp(Door.transform.position, DoorEnd.transform.position, fracJourney);
             StartTimer = true;
-             StartCoroutine(WaitOneSecond());
-           
+            StartCoroutine(WaitOneSecond());
         }
 
-        if (!DoorIsOpen)
+        if (gameObject.tag == ("CanClose"))
         {
-            //TimerStart = Time.time;
-            float distCovered = (Time.deltaTime) * speed;
-            float fracJourney = distCovered / journeyLength;
-            Door.transform.position = Vector3.Lerp(Door.transform.position, DoorStart.transform.position, fracJourney);
-
+            if (!DoorIsOpen)
+            {
+                float distCovered = (Time.deltaTime) * speed;
+                float fracJourney = distCovered / journeyLength;
+                Door.transform.position = Vector3.Lerp(Door.transform.position, DoorStart.transform.position, fracJourney);
+            }
         }
 
         if (StartTimer == true)
@@ -73,11 +67,10 @@ public class DoorController : MonoBehaviour {
 
     }
 
-
     void EndTiming()
     {
         SavedTime = TimerText.text;
-        //TimerText.color = Color.cyan;
+        TimerText.color = Color.cyan;
     }
 
     void StartTiming()
@@ -89,25 +82,55 @@ public class DoorController : MonoBehaviour {
             float seconds = NewTime % 60;
             float millSecs = (NewTime * 100) % 100;
 
-            TimerText.text = string.Format ("{0:00} : {1:00} : {2:00}", minuites, seconds , millSecs);
+            TimerText.text = string.Format("{0:00} : {1:00} : {2:00}", minuites, seconds, millSecs);
         }
-        else
-        {
-
-        }
-
-        
     }
 
     void OnTriggerEnter(Collider Col)
     {
+
+
         if (Col.gameObject.transform.CompareTag("Controller"))
         {
             DoorIsOpen = true;
-            //Debug.Log("HIT");
-        }
 
+            GameObject[] clonecheck;
+            clonecheck = GameObject.FindGameObjectsWithTag("Clone");
+
+            if (clonecheck.Length != 0)
+            {
+                EnemiesSpawned = GameObject.FindGameObjectsWithTag("Clone");
+                for (int i = 0; i < EnemiesSpawned.Length; i++)
+                    Destroy(EnemiesSpawned[i]);
+                NewTime = 0;
+
+                for (int i = 0; i < Known_Prefabs.Length; i++)
+                {
+
+                    CLoneTag(i);
+
+
+                }
+            }
+            if (clonecheck.Length == 0)
+            {
+                for (int i = 0; i < Known_Prefabs.Length; i++)
+                {
+
+                    CLoneTag(i);
+
+                }
+
+
+            }
+        }
     }
+    private void CLoneTag(int i)
+    {
+        Known_Prefabs[i].tag = "Clone";
+        Instantiate(Known_Prefabs[i], Known_Prefabs_Target[i].transform.position, Known_Prefabs_Target[i].transform.rotation);
+    }
+
 
     IEnumerator WaitOneSecond()
     {
