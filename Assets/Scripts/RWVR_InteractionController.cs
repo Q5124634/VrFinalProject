@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RWVR_InteractionController : MonoBehaviour {
+public class RWVR_InteractionController : RWVR_InteractionObject
+{
 
     public Transform snapColliderOrigin; // 1
     public GameObject ControllerModel; // 2

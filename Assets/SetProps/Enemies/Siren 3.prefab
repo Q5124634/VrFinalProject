@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4848942365193232}
   - component: {fileID: 108633332617814552}
-  - component: {fileID: 114714679286189932}
+  - component: {fileID: 114628740934984926}
   m_Layer: 0
   m_Name: Spotlight
   m_TagString: Untagged
@@ -1538,7 +1538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4552219964096502}
   - component: {fileID: 108537209577214364}
-  - component: {fileID: 114960540248481084}
+  - component: {fileID: 114130725782236132}
   m_Layer: 0
   m_Name: Spotlight (2)
   m_TagString: Untagged
@@ -1572,7 +1572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4901503145793714}
   - component: {fileID: 108529838912497254}
-  - component: {fileID: 114056027862212012}
+  - component: {fileID: 114431388543709462}
   m_Layer: 0
   m_Name: Spotlight (1)
   m_TagString: Untagged
@@ -2774,7 +2774,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986349225458512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.727, y: 0, z: 9.85}
+  m_LocalPosition: {x: -11.84758, y: 3.5000005, z: 1.4233481}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4707231342941254}
@@ -5751,7 +5751,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 93.456764
   m_CookieSize: 10
@@ -5787,7 +5787,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 77.57925
   m_CookieSize: 10
@@ -5823,7 +5823,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 79.0123
   m_CookieSize: 10
@@ -5867,17 +5867,6 @@ MonoBehaviour:
   - {fileID: 4003153654063988}
   - {fileID: 4609984866085732}
   - {fileID: 4350273344333606}
---- !u!114 &114056027862212012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1862881450333632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114124319915024064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5894,6 +5883,31 @@ MonoBehaviour:
   - {fileID: 4792407814920724}
   - {fileID: 4916372658345552}
   - {fileID: 4375196489634996}
+--- !u!114 &114130725782236132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850489789557958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!114 &114156043122980832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5958,6 +5972,31 @@ MonoBehaviour:
   isLooping: 1
   pingPong: 0
   countDelay: 100
+--- !u!114 &114431388543709462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862881450333632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!114 &114542014994944924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5972,6 +6011,31 @@ MonoBehaviour:
   DeadVersion: {fileID: 1488873455698772, guid: 888306652add9de4e8c90787834e0135,
     type: 2}
   health: 100
+--- !u!114 &114628740934984926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123539509409468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!114 &114665578247503460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6006,17 +6070,6 @@ MonoBehaviour:
   - {fileID: 4417365075634242}
   - {fileID: 4720331209330322}
   - {fileID: 4326448691173796}
---- !u!114 &114714679286189932
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123539509409468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114737683113496374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6176,17 +6229,6 @@ MonoBehaviour:
   isLooping: 1
   pingPong: 0
   countDelay: 100
---- !u!114 &114960540248481084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1850489789557958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114982167519962846
 MonoBehaviour:
   m_ObjectHideFlags: 1

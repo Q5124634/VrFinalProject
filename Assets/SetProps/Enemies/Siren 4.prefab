@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4230742428944836}
   - component: {fileID: 108534958683025440}
-  - component: {fileID: 114614977631857260}
+  - component: {fileID: 114674953696540876}
   m_Layer: 0
   m_Name: Spotlight
   m_TagString: Untagged
@@ -615,7 +615,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1306360285461028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.758, y: 0, z: 0}
+  m_LocalPosition: {x: -14.772327, y: 3.5, z: 0.7687568}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4218533866147574}
@@ -1440,7 +1440,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 111.2068
   m_CookieSize: 10
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   - {fileID: 1390504714548674}
   WindDown: {fileID: 8300000, guid: 2c3af6bd92ae1fa4d896d1c033155e6b, type: 3}
   myAudioSource: {fileID: 82759838889477840}
---- !u!114 &114614977631857260
+--- !u!114 &114674953696540876
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1489,9 +1489,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1076726751896454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!114 &114709951461759650
 MonoBehaviour:
   m_ObjectHideFlags: 1

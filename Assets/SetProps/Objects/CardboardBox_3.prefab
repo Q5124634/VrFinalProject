@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4057850360735492}
   - component: {fileID: 33138093887167578}
   - component: {fileID: 23103666944179226}
+  - component: {fileID: 65630234413451772}
   m_Layer: 0
   m_Name: CardboardBox_3
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1805859305763542}
   m_LocalRotation: {x: 0, y: -0.016286291, z: 0, w: 0.99986744}
-  m_LocalPosition: {x: -12.134379, y: 1.3090017, z: -14.061856}
+  m_LocalPosition: {x: -6.5022035, y: 0.94844633, z: 10.171708}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,3 +83,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1805859305763542}
   m_Mesh: {fileID: 4300000, guid: e23dba22a399072459a00bad42058307, type: 3}
+--- !u!65 &65630234413451772
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805859305763542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.26, y: 1.1321874, z: 0.63991}
+  m_Center: {x: 0, y: 0.0070931017, z: 0.00000010430813}

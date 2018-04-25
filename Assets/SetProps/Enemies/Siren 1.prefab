@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4793189655264194}
   - component: {fileID: 108492607429608760}
-  - component: {fileID: 114885825379081170}
+  - component: {fileID: 114094679328904866}
   m_Layer: 0
   m_Name: Spotlight (1)
   m_TagString: Untagged
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4036112763244368}
   - component: {fileID: 108290108404834296}
-  - component: {fileID: 114469410712664326}
+  - component: {fileID: 114088479104299840}
   m_Layer: 0
   m_Name: Spotlight (2)
   m_TagString: Untagged
@@ -413,7 +413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4917516373001634}
   - component: {fileID: 108742980196792796}
-  - component: {fileID: 114382215043087024}
+  - component: {fileID: 114386589823219090}
   m_Layer: 0
   m_Name: Spotlight
   m_TagString: Untagged
@@ -1650,7 +1650,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1989043673520434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -19.87117, y: 3.4999995, z: -12.04892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4179766867418634}
@@ -2950,7 +2950,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 41.794872
   m_CookieSize: 10
@@ -2986,7 +2986,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 41.794872
   m_CookieSize: 10
@@ -3022,7 +3022,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 41.794872
   m_CookieSize: 10
@@ -3048,6 +3048,56 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114088479104299840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104369441504822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
+--- !u!114 &114094679328904866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1083328275162292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!114 &114124565187844374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3112,7 +3162,7 @@ MonoBehaviour:
   isLooping: 1
   pingPong: 0
   countDelay: 0
---- !u!114 &114382215043087024
+--- !u!114 &114386589823219090
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -3120,20 +3170,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418294399592696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114469410712664326
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1104369441504822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!114 &114513856387221706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3254,17 +3307,6 @@ MonoBehaviour:
   - {fileID: 4375039290868650}
   - {fileID: 4173159599546536}
   - {fileID: 4364336665981526}
---- !u!114 &114885825379081170
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1083328275162292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018dfd536f9769e42be702fe8b7ffbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114892241581988058
 MonoBehaviour:
   m_ObjectHideFlags: 1

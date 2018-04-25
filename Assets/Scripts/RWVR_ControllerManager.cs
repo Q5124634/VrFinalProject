@@ -12,6 +12,10 @@ public class RWVR_ControllerManager : MonoBehaviour {
     public GameObject Gun5;
     public GameObject Gun6;
     public GameObject Gun7;
+    public GameObject Gun8;
+    public GameObject Gun9;
+    public GameObject Gun10;
+    public GameObject Gun11;
     public RWVR_InteractionController leftController; // 2
     public RWVR_InteractionController rightController; // 3
 
